@@ -1,9 +1,270 @@
-/* * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-} */
+}
+
 
 ul {
-    list-style-type: square;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background: #fafafa;
+    background: rgba(var(255,255,255),1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex: wrap;
+}
+
+/* NAV STYLING */
+
+nav {
+    /* border: 5px solid purple; */
+    /* background-color: lightgoldenrodyellow; */
+    background-color: rgba(var(255,255,255),1);
+    height: 5vh;
+}
+
+/* MAIN STYLING */
+
+main {
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    /* border: 5px solid yellow; */
+    /* background-color: lightgray; */
+    background-color: rgba(var(255,255,255),1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone img{
+    width: 60%;
+    height: 100%;
+    margin-top: 25px;
+    margin-left: 300px;
+}
+
+.right-side {
+    /* border: 5px solid green; */
+    /* background-color: lightpink; */
+    height: 80vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 300px;
+}
+
+.log-in {
+    background-color: #ffffff;
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(112, 112, 112, 0.5);
+    padding: 15px 40px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.log-in img {
+    width: 190px;
+    margin-bottom: 10px;
+}
+
+.log-in-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.log-in-form input,
+.log-in-button {
+    padding: 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.log-in-form input,
+.log-in-form input::placeholder {
+    font-size: 11px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.log-in-form input {
+    background: #fafafa;
+    border: 1px solid rgba(112, 112, 112), 0.5;
+    outline: none;
+    border: solid #00000000 ;
+}
+
+.log-in-form input[type="text"] {
+    margin-bottom: 5px;
+}
+
+.log-in-form input::placeholder {
+    color: #837979;
+}
+
+.log-in-form input:focus {
+    border-color: rgba(112, 112, 112), 0.8;
+}
+
+.log-in-button {
+    background: #b0dbf8;
+    color: #ffffff;
+    margin: 20px 0;
+    font-weight: 800;
+    outline: none;
+    border: none;
+}
+
+.or {
+    color: #8e8e8e;
+    font-weight: 600;
+    position: relative;
+    font-size: 12px;
+}
+
+.or::before,
+.or::after {
+    content: "";
+    display: block;
+    width: 110px;
+    height: 1px;
+    position: absolute;
+    background: rgba(112, 112, 112, 0.4);
+    top: 50%;
+}
+
+.or::before {
+    left: 30px;
+}
+
+.or::after {
+    right: 30px;
+}
+
+.fb-login {
+    margin: 15px 0;
+}
+
+.fb-login img,
+.fb-login span {
+    vertical-align: middle;
+}
+
+.fb-login img {
+    width: 15px;
+    margin-right: 5px;
+    padding-top: 10px;
+}
+
+.fb-login span {
+    font-size: 13px;
+    color: #385185;
+    font-weight: 700;
+}
+
+.forgot{
+    color: #385185;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+
+.sign-up {
+    background:#ffffff;
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid rgba(112, 112, 112, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.sign-up span {
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.sign-up a {
+    font-size: 13px;
+    font-weight:bold;
+    color: #43b3fd;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.get-the-app span {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.store-images img {
+    width: 130px;
+}
+
+.store-images img:nth-child(1) {
+    margin-right: 10px;
+}
+
+/* FOOTER STYLING */
+
+footer {
+    /* border: 5px solid blue; */
+    /* background-color: lightgreen; */
+    background-color: rgba(var(255,255,255),1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 10vh;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 0 auto;
+}
+
+.footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 11px;
+    }
+
+    .footer-links li {
+        flex-basis: 10%;
+        text-align: center;
+        margin-top: 20px;
+}
+
+.footer-links a {
+        color: #6f7275;
+        font-weight:normal ;
+        display: inline-block;
+        margin-bottom: 14px;
+}
+
+.copyright {
+        text-align: center;
+        color: #6f7275;
+        font-weight: normal;
+        font-size: 12px;
 }

@@ -5,17 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>To Do List</title>
+    <link rel="insta icon" href="./images/instaicon.ico" type="image/x-icon">
+    <title>Instagram</title>
 </head>
 <body>
-    <h1 id="heading">To Do List</h1>
-    <div>
-        <input id="input" type="text">
-        <button id="add">Add</button>
-    </div>
-    <div id="list">
-        <ul></ul>
-    </div>
-    <script src="index.js"></script>
+    <nav class="nav"></nav>
+    <main>
+        <div class="left-side">
+            <!-- PHONE -->
+            <div class="phone">
+                <img src="./images/phone.png" alt="phone">
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="log-in-box">
+                <div class="log-in">
+                    <!-- INSTAGRAM LOGO -->
+                    <img src="./images/instagram-logo.png" alt="instagram-Logo">
+                    <!-- LOG IN FORM -->
+                    <div class="log-in-form">
+                        <input type="text" placeholder="Phone number, username, or email">
+                        <input type="password" placeholder="Password">
+                        <button class="log-in-button">Log in</button>
+                    </div>
+                    <!-- OR DIVIDER -->
+                    <span class="or">OR</span>
+                    <!-- LOG IN WITH FACEBOOK -->
+                    <div class="fb-login">
+                        <a href="#">
+                            <img src="./images/facebook-icon.png" alt="facebook">
+                            <span>Log in with Facebook</span>
+                        </a>
+                    </div>
+                    <!-- FORGOT PASSWORD -->
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <!-- SIGN UP -->
+                <div class="sign-up">
+                    <span>Don't have an account?</span>
+                    <a href="#">Sign up</a>
+                </div>
+                <!-- DOWNLOAD APP -->
+                <div class="get-the-app">
+                    <span>Get the app.</span>
+                    <div class="store-images">
+                        <a href="#"><img src="./images/applestore.png" alt="appleStore"></a>
+                        <a href="#"><img src="./images/googlestore.png" alt="googleStore"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <ul class="footer-links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">API</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Top Accounts</a></li>
+            <li><a href="#">Hashtags</a></li>
+            <li><a href="#">Locations</a></li>
+        </ul>
+        <span class="copyright">English &copy; 2021 Instagram from Facebook </span>
+    </footer>
 </body>
 </html>
